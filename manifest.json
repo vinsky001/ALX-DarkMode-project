@@ -13,7 +13,7 @@
         "default_action": "ALX DarkMode Reader",
         "default_dropdown": "dropdown.html"
     },
-    "oermissions":[
+    "permissions":[
         "https://*/*",
         "http://*/*",
         "tabs"
