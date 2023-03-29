@@ -1,6 +1,21 @@
 {
-    "name": "ALX DarkReader",
+    "name": "ALX DarkMode Reader",
     "version": 1.0,
-    "description": "Dark mode for ALX Intranet"
-    
+    "description": "Dark mode for ALX Intranet",
+    "manifest_version": 2,
+    "Background":{
+        "scripts":[
+            "dropdown.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_action": "ALX DarkMode Reader",
+        "default_dropdown": "dropdown.html"
+    },
+    "oermissions":[
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]    
 }
