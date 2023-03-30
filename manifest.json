@@ -2,16 +2,13 @@
     "name": "ALX DarkMode Reader",
     "version": 1.0,
     "description": "Dark mode for ALX Intranet",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "Background":{
-        "scripts":[
-            "dropdown.js"
-        ],
-        "persistent": true
+        "service_worker": "popup.js"
     },
     "browser_action": {
         "default_action": "ALX DarkMode Reader",
-        "default_dropdown": "dropdown.html"
+        "default_popup": "popup.html"
     },
     "permissions":[
         "https://*/*",
