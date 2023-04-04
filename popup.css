@@ -1,108 +1,151 @@
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url(./AktivGrotesk-Regular.ttf);
+}
+
 .popup {
-        min-width: 344px;
-        min-height: 188px;
-        background: #0f0e0e;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        padding: 1rem;
-    }
+    height: 400px;
+    width: 320px;
+    font-family: "Aktiv Grotesk", sans-serif;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 10px; */
+}
 
-    
+header.header,
+footer.footer {
+    width: inherit;
+    height: 100px;
+    background: #062a4c;
+    align-items: center;
+    justify-content: center;
+}
+
+main.main {
+    width: inherit;
+    height: 200px;
+    background: #072d6e;
+}
+
 h1 {
-        font-size: 1.5rem;
-        font-family: "Lobster";
-        text-align: center;
+    color: #6289ca;
+    font-size: 1.5rem !important;
+    /* font-family: "Lobster"; */
+    text-align: center;
+}
 
-    }
+h4,
+.theme-label {
+    color: orange;
+}
 
+.copy-year {
+    color: orange;
+    padding-top: 20px;
+}
+
+td {
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.settings-icon {
+    justify-content: end;
+    color: rgb(139, 137, 137);
+}
+
+/* btn-group {
+    display: flex !important;
+    justify-content: space-between !important;
+} */
+/*
 .yellow {
-        color: #FBE36D;
-    }
+    color: #FBE36D;
+}
 
 .blue {
-        color: #588BE4;
-    }
+    color: #588BE4;
+}
 
 p {
-        font-family: "Raleway", sans-serif;
-        font-size: 0.75rem;
-    }
+    font-family: "Raleway", sans-serif;
+    font-size: 0.75rem;
+} */
 
-.button {
+/* .button {
+    background-color: #FDFCA3;
+    position: relative;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 25px;
+    transition: 1s;
+    font-family: "Raleway", sans-serif;
+} */
+
+/* .half {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
+
+/* .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(255, 213, 0);
+    pointer-events: none;
+    transition: 1s;
+
+} */
+
+/* @keyframes transformToBlue {
+    0% {
         background-color: #FDFCA3;
-        position: relative;
-        height: 2rem;
-        width: 4rem;
-        border-radius: 25px;
-        transition: 1s;
-        font-family: "Raleway", sans-serif;
     }
 
-.half {
-        position: absolute;
-        width: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        pointer-events: none;
-    }
-
-.circle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        background-color: rgb(255, 213, 0);
-        pointer-events: none;
-        transition: 1s;
-
-    }
-
-@keyframes transformToBlue {
-        0% {
-            background-color: #FDFCA3;
-        }
-
-        100% {
-            background-color: #8ABFF0;
-        }
-    }
-
-@keyframes transformToYellow {
-        0% {
-            background-color: #8ABFF0;
-        }
-
-        100% {
-            background-color: #FDFCA3;
-        }
-    }
-
-@keyframes moveCircleRight {
-        0% {
-            left: 0;
-            transform: translateX(0);
-            background-color: rgb(255, 213, 0);
-        }
-
-        100% {
-            left: 100%;
-            transform: translateX(-100%);
-            background-color: #588BE4;
-        }
-    }
-
-@keyframes moveCircleLeft {
-        0% {
-            left: 100%;
-            transform: translateX(-100%);
-            background-color: #588BE4;
-        }
-
-        100% {
-            left: 0;
-            transform: translateX(0);
-            background-color: rgb(255, 213, 0);
+    100% {
+        background-color: #8ABFF0;
     }
 }
+
+@keyframes transformToYellow {
+    0% {
+        background-color: #8ABFF0;
+    }
+
+    100% {
+        background-color: #FDFCA3;
+    }
+}
+
+@keyframes moveCircleRight {
+    0% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+
+    100% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+}
+
+@keyframes moveCircleLeft {
+    0% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+} */
