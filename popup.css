@@ -1,56 +1,56 @@
 @font-face {
-    font-family: "Aktiv Grotesk";
-    src: url(./AktivGrotesk-Regular.ttf);
+  font-family: "Aktiv Grotesk";
+  src: url(./AktivGrotesk-Regular.ttf);
 }
 
 .popup {
-    height: 400px;
-    width: 320px;
-    font-family: "Aktiv Grotesk", sans-serif;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-    /* border-radius: 10px; */
+  height: 400px;
+  width: 320px;
+  font-family: "Aktiv Grotesk", sans-serif;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 10px; */
 }
 
 header.header,
 footer.footer {
-    width: inherit;
-    height: 100px;
-    background: #062a4c;
-    align-items: center;
-    justify-content: center;
+  width: inherit;
+  height: 100px;
+  background: #062a4c;
+  align-items: center;
+  justify-content: center;
 }
 
 main.main {
-    width: inherit;
-    height: 200px;
-    background: #072d6e;
-}
-
-h1 {
-    color: #6289ca;
-    font-size: 1.5rem !important;
-    /* font-family: "Lobster"; */
-    text-align: center;
+  width: inherit;
+  height: 200px;
+  background: #072d6e;
 }
 
 h4,
 .theme-label {
-    color: orange;
+  color: orange;
 }
 
+.contribute-link-light-mode {
+  color: #8854d0;
+}
+
+.contribute-link-dark-mode {
+  color: #fed330;
+}
 .copy-year {
-    color: orange;
-    padding-top: 20px;
+  color: orange;
+  padding-top: 20px;
 }
 
 td {
-    padding: 0 !important;
-    text-align: center !important;
+  padding: 0 !important;
+  text-align: center !important;
 }
 
 .settings-icon {
-    justify-content: end;
-    color: rgb(139, 137, 137);
+  justify-content: end;
+  color: rgb(139, 137, 137);
 }
 
 /* btn-group {
