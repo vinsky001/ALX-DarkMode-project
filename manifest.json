@@ -1,18 +1,40 @@
 {
-    "name": "ALX DarkMode Reader",
+    "name": "ALX Intranet Theme Selector",
     "version": 1.0,
-    "description": "Dark mode for ALX Intranet",
+    "description": "ALX Intranet Theme Selector",
     "manifest_version": 3,
-    "Background":{
+    "background": {
         "service_worker": "popup.js"
+    },
+    "action": {
+        "default_title": "ALX Intranet Theme Selector"
+    },
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "",
+            "48": "",
+            "128": ""
+        }
     },
     "browser_action": {
         "default_action": "ALX DarkMode Reader",
         "default_popup": "popup.html"
     },
-    "permissions":[
-        "https://*/*",
-        "http://*/*",
-        "tabs"
-    ]    
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*intranet.alxswe.com/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
 }
