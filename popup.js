@@ -4,43 +4,41 @@ const themeMessage = document.getElementById("theme-message");
 const contributeLink = document.getElementById("contribute-link");
 let darkModeOn = false;
 
-// Inverts the popup color
-function invert(darkModeOn) {
-    // If dark mode is applied
-    if (!darkModeOn) {
-        document.body.style.filter = "invert(1) hue-rotate(180deg)";
-        let media = document.querySelectorAll("img, picture, video");
-        media.forEach((mediaItem) => {
-            mediaItem.style.filter = "invert(1) hue-rotate(180deg)"
-        });
-    }
-    else {
-        document.body.style.filter = "invert(0)";
-        let media = document.querySelectorAll("img, picture, video");
-        media.forEach((mediaItem) => {
-            mediaItem.style.filter = "invert(0)"
-        });
-    }
-}
 
 themeSwitch.addEventListener("change", () => {
-    // If dark mode is applied
     if (!darkModeOn) {
-        themeIcon.classList.remove("fa-sun");
-        themeIcon.classList.add("fa-moon");
-        themeMessage.textContent = "Switch Off Dark Mode";
-        contributeLink.classList.remove("contribute-link-light-mode");
-        contributeLink.classList.add("contribute-link-dark-mode");
+        // Update the UI to the dark mode
+        updateUIToDark();
     }
     else {
-        themeIcon.classList.remove("fa-moon");
-        themeIcon.classList.add("fa-sun");
-        themeMessage.textContent = "Switch On Dark Mode";
-        contributeLink.classList.remove("contribute-link-dark-mode");
-        contributeLink.classList.add("contribute-link-light-mode");
+        // Update the UI to the light mode
+        updateUIToLight();
     }
-
-    invert(darkModeOn);
-
+    // Update the theme mode applied
     darkModeOn = !darkModeOn;
 });
+
+
+function updateUIToDark() {
+    themeIcon.classList.remove("fa-sun");
+    themeIcon.classList.add("fa-moon");
+    themeMessage.textContent = "Switch Off Dark Mode";
+    contributeLink.classList.remove("contribute-link-light-mode");
+    contributeLink.classList.add("contribute-link-dark-mode");
+    document.querySelector(".card-head").classList.add("dark-theme");
+    document.querySelector(".card-body").classList.add("dark-theme");
+    document.querySelector(".card-content").classList.add("dark-theme");
+    document.querySelector(".card-foot").classList.add("dark-theme");
+}
+
+function updateUIToLight() {
+    themeIcon.classList.remove("fa-moon");
+    themeIcon.classList.add("fa-sun");
+    themeMessage.textContent = "Switch On Dark Mode";
+    contributeLink.classList.remove("contribute-link-dark-mode");
+    contributeLink.classList.add("contribute-link-light-mode");
+    document.querySelector(".card-head").classList.remove("dark-theme");
+    document.querySelector(".card-body").classList.remove("dark-theme");
+    document.querySelector(".card-content").classList.remove("dark-theme");
+    document.querySelector(".card-foot").classList.remove("dark-theme");
+}

@@ -15,30 +15,37 @@
 </head>
 
 <body>
-  <div class="container p-4" id="popup" style="width: 18rem;">
+  <div class="container" id="popup" style="width: 18rem;">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title text-center mt-2 mb-4">ALX INTRANET THEME SELECTOR</h5>
-        <h1 class="card-title text-center"><i class="fa fas fa-sun" id="theme-icon"></i></h1>
-        <p class="text-center" id="theme-message">Switch On Dark Mode</p>
-        <div class="row align-items-center mb-3">
-          <div class="text-center">
-            <div class="form-check form-switch d-inline-block">
-              <input class="form-check-input" type="checkbox" role="switch" id="theme-switch">
+        <div class="card-head">
+          <h5 class="card-title text-center mt-2 mb-4">ALX INTRANET THEME SELECTOR</h5>
+        </div>
+        <div class="card-content">
+          <h1 class="card-title text-center"><i class="fa fas fa-sun" id="theme-icon"></i></h1>
+          <p class="text-center" id="theme-message">Switch On Dark Mode</p>
+          <div class="row align-items-center mb-3 switch">
+            <div class="text-center">
+              <div class="form-check form-switch d-inline-block">
+                <input class="form-check-input switch-icon" type="checkbox" role="switch" id="theme-switch">
+              </div>
             </div>
           </div>
         </div>
 
-        <p class="text-center">
-          <a href="https://github.com/vinsky001/ALX-DarkMode-project.git" id="contribute-link"
-            class="text-decoration-none contribute-link-light-mode">
-            Contribute to this project
-          </a>
-        </p>
+        <div class="card-foot">
+          <p class="text-center copy-text">
+            ALX &copy; 2023
+          </p>
 
-        <p class="text-center">
-          &copy; 2023
-        </p>
+          <p class="text-center">
+            <a href="https://github.com/vinsky001/ALX-DarkMode-project.git" id="contribute-link"
+              class="text-decoration-none contribute-link-light-mode contribute">
+              Contribute to this project
+            </a>
+          </p>
+
+        </div>
       </div>
     </div>
     <script src="./popup.js"></script>
