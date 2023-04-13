@@ -42,9 +42,8 @@
   margin: 0 !important;
 }
 
-.switch-icon.dark-theme:hover {
+.switch-icon {
   cursor: pointer;
-  border-color: #072d6e;
 }
 
 .card-foot.dark-theme {
