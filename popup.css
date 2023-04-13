@@ -15,6 +15,7 @@
 
 .card-body {
   padding: 0 !important;
+  transition: background-color 700ms ease-in, color 300ms ease-in;
 }
 
 .card-head, .card-foot {
@@ -23,6 +24,8 @@
 
 .card-content {
   padding: 10px 0;
+  transition: background-color 500ms ease-in, color 500ms ease-in;
+
 }
 
 .card-body.dark-theme {
@@ -46,6 +49,10 @@
 
 .card-foot.dark-theme {
   padding: 10px 0;
+}
+
+.card-foot>p:last-child {
+  margin-bottom: 0 !important;
 }
 
 .contribute.dark-theme:hover,
