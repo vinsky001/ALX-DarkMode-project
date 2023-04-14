@@ -2,12 +2,7 @@ const themeSwitch = document.getElementById("theme-switch");
 const themeIcon = document.getElementById("theme-icon");
 const themeMessage = document.getElementById("theme-message");
 const contributeLink = document.getElementById("contribute-link");
-let darkModeOn = localStorage.getItem("mode");
-
-// Set UI to default when mode is not selected
-if (darkModeOn === null) {
-    darkModeOn = "light";
-}
+let darkModeOn = localStorage.getItem("mode", "light");
 
 // Set UI to appropriate mode whenever page is loaded
 darkModeOn === "dark" ? updateUIToDark() : updateUIToLight();
