@@ -2,11 +2,22 @@ const themeSwitch = document.getElementById("theme-switch");
 const themeIcon = document.getElementById("theme-icon");
 const themeMessage = document.getElementById("theme-message");
 const contributeLink = document.getElementById("contribute-link");
-let darkModeOn = false;
+let darkModeOn = localStorage.getItem("mode");
 
+// Set UI to default when mode is not selected
+if (darkModeOn === null) {
+    darkModeOn = "light";
+}
+
+// Set UI to appropriate mode whenever page is loaded
+darkModeOn === "dark" ? updateUIToDark() : updateUIToLight();
 
 themeSwitch.addEventListener("change", () => {
-    if (!darkModeOn) {
+    // Toggle darkModeOn 
+    darkModeOn = darkModeOn === "dark" ? "light" : "dark";
+    localStorage.setItem("mode", darkModeOn);
+
+    if (darkModeOn === "dark") {
         // Update the UI to the dark mode
         updateUIToDark();
     }
@@ -14,12 +25,11 @@ themeSwitch.addEventListener("change", () => {
         // Update the UI to the light mode
         updateUIToLight();
     }
-    // Update the theme mode applied
-    darkModeOn = !darkModeOn;
 });
 
 
 function updateUIToDark() {
+    themeSwitch.checked = true;
     themeIcon.classList.remove("fa-sun");
     themeIcon.classList.add("fa-moon");
     themeMessage.textContent = "Switch Off Dark Mode";
@@ -32,6 +42,7 @@ function updateUIToDark() {
 }
 
 function updateUIToLight() {
+    themeSwitch.checked = false;
     themeIcon.classList.remove("fa-moon");
     themeIcon.classList.add("fa-sun");
     themeMessage.textContent = "Switch On Dark Mode";
