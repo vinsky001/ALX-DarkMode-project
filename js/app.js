@@ -3,7 +3,7 @@ const themeIcon = document.getElementById("theme-icon");
 const themeMessage = document.getElementById("theme-message");
 const contributeLink = document.getElementById("contribute-link");
 let darkModeOn = localStorage.getItem("mode", "light");
-
+    
 // Set UI to appropriate mode whenever page is loaded
 darkModeOn === "dark" ? updateUIToDark() : updateUIToLight();
 
@@ -21,8 +21,7 @@ themeSwitch.addEventListener("change", () => {
         updateUIToLight();
     }
 });
-
-
+    
 function updateUIToDark() {
     themeSwitch.checked = true;
     themeIcon.classList.remove("fa-sun");
