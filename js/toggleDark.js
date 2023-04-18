@@ -1,13 +1,21 @@
-// this is the code which will be injected into a given page...
-
 (function () {
+    addClasses(fetch("body"));
+    addClasses(fetch(".navbar.navbar-default.navbar-fixed-top.topbar.visible-xs"));
+    addClasses(fetch(".hidden-xs.navigation.sidebar"));
 
+    function fetch(selector) {
+        return document.querySelectorAll(selector);
+    }
 
-    document.querySelector("html").style.filter = "invert(1) hue-rotate(180deg)";
-    // document.body.style.filter = "invert(1) hue-rotate(180deg)"
-    let media = document.querySelectorAll("img, picture, video");
-    media.forEach((mediaItem) => {
-        mediaItem.style.filter = "invert(1) hue-rotate(180deg)"
-    })
+    function addClass(element) {
+        element.classList.add("dark");
+    }
 
-})();mv
+    function addClasses(elements) {
+        elements.forEach(
+            (element) => {
+                addClass(element);
+        })
+    };
+
+})()
