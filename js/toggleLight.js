@@ -1,8 +1,22 @@
 (function () {
-    // document.body.style.filter = "invert(0) hue-rotate(0deg)"
-    document.querySelector("html").style.filter = "invert(0) hue-rotate(0deg)";
-    let media = document.querySelectorAll("img, picture, video");
-    media.forEach((mediaItem) => {
-        mediaItem.style.filter = "invert(0) hue-rotate(0deg)"
-    })
-})();
+
+    removeClasses(fetch("body"));
+    removeClasses(fetch(".navbar.navbar-default.navbar-fixed-top.topbar.visible-xs"));
+    removeClasses(fetch(".hidden-xs.navigation.sidebar"));
+
+    function fetch(selector) {
+        return document.querySelectorAll(selector);
+    }
+
+    function removeClass(element) {
+        element.classList.remove("dark");
+    }
+
+    function removeClasses(elements) {
+        elements.forEach( 
+            (element) => {
+                removeClass(element);
+        });
+    }
+
+}())

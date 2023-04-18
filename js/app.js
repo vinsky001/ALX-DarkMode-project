@@ -56,5 +56,12 @@ if (document.querySelector("#theme-switch") != null) {
         document.querySelector(".card-body").classList.remove("dark-theme");
         document.querySelector(".card-content").classList.remove("dark-theme");
         document.querySelector(".card-foot").classList.remove("dark-theme");
+        let [tab] = await chrome.tabs.query({
+            active: true, lastFocusedWindow: true
+        });
+        chrome.scripting.executeScript({
+            target: {tabId: tab.id, allFrames: true}
+            , files: ["js/toggleLight.js"],
+        });
     }
 }
