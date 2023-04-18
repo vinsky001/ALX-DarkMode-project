@@ -242,6 +242,17 @@ body.dark .navigation>ul>li a .image
 body.dark .navigation>ul>li {
   margin: 0;
 }
+
+body.dark .slack {
+  transition: transform 300ms ease-in-out, background-color 300ms ease !important;
+}
+
+@media (min-width: 768px) {
+  body.dark .slack:hover {
+    background-color: var(--col-bg-clear) !important;
+    transform: rotate(170deg);
+  }
+}
 /* Navigation styles ends here */
 
 /* Main styles */
