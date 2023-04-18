@@ -1,37 +1,20 @@
 {
-    "manifest_version": 3,
     "name": "ALX Intranet Theme Selector",
-    "description": "Select preferred themes for ALX Intranet",
     "version": "1.0",
-    "background": {
-        "service_worker": "background.js"
-    },
-    "icons": {
-        "16": "images/wrong-icon-16.png",
-        "32": "images/wrong-icon-32.png",
-        "48": "images/wrong-icon-48.png"
-    },
+    "description": "ALX Intranet Theme Selector",
+    "manifest_version": 3,
     "action": {
-        "default_title": "ALX Intranet Theme Selector",
-        "default_icon": {
-            "16": "images/wrong-icon-16.png",
-            "32": "images/wrong-icon-32.png",
-            "48": "images/wrong-icon-48.png"
-        }
+        "default_action": "ALX DarkMode Reader",
+        "default_popup": "theme.html"
     },
     "content_scripts": [
         {
             "matches": [
                 "https://intranet.alxswe.com/*"
             ],
-            "all_frames": true,
-            "css": [
-                "content.css"
-            ],
-            "js": [
-                "content-script.js"
-            ],
-            "run_at": "document_start"
+            "js": ["js/app.js"],
+            "css": ["css/alx-dark.css"],
+            "run_at": "document_end"
         }
     ],
     "permissions": [
