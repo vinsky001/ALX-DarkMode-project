@@ -119,6 +119,23 @@ body.dark .logged_out_form {
 
 body.dark .hbtn_logo {
   filter: invert(1);
+  transform: rotate(0deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  11% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* Login styles ends here */
 
@@ -143,6 +160,7 @@ body.dark .sidebar {
 
 body.dark .logo {
   filter: invert(1) hue-rotate(180deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
 }
 
 body.dark .navbar-header {
