@@ -194,6 +194,32 @@ body.dark .nav.navbar-nav {
   margin-top: 0 !important;
 }
 
+body.dark .navbar-toggle .icon-bar {
+  background-color: var(--col-acc-400) !important;
+  transition: opacity 500ms ease, background-color 500ms ease, transform 500ms ease, top 500ms ease, bottom 500ms ease;
+  opacity: 1;
+  position: relative;
+}
+
+body.dark .navbar-toggle.collapsed .icon-bar {
+  position: relative;
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 5px;
+  transform: rotate(45deg) translateY(100%);
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  bottom: 4px;
+  transform: rotate(-45deg) translateY(-100%);
+}
+
 body.dark .topbar.navbar-default .navbar-collapse {
   border-bottom-color: var(--col-bg-600) !important;
 }
