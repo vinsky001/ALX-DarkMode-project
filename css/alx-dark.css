@@ -1,0 +1,823 @@
+:root {
+  /* Colors for the dark theme */
+  /* Background colors */
+  --col-bg-400: #121212;
+  --col-bg-500: #1e1f22;
+  --col-bg-600: #2b2d31;
+  --col-bg-700: #313338;
+  --col-bg-800: #383A40;
+
+  /* Accent colors */
+  --col-acc-400: #db3e3e;
+  --col-acc-500: #f36262;
+
+  /* Colors for the checker */
+  --col-code-pass: #31572c;
+  --col-code-fail: #541919;
+  --col-requirement-pass: #284724;
+  --col-requirement-fail: #431515;
+  --col-efficiency-success: #291531;
+  --col-efficiency-fail: #7d6e18;
+  --col-answer-success: #151a48;
+  --col-answer-fail: #774e1d;
+
+  /* Text colors */
+  --col-light-400: #fff;
+  --col-light-500: #ddd3d3;
+  --col-light-600: #a79a9a;
+  --col-light-700: #837a7a;
+  --col-light-800: #746d6d;
+  --col-bg-clear: transparent;
+}
+
+/* Generic styles */
+body.dark {
+  background-color: var(--col-bg-500) !important;
+}
+
+body.dark main {
+  background-color: var(--col-bg-500) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark hr {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark code {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-acc-500) !important;
+}
+
+body.dark table>thead {
+  background-color: var(--col-bg-clear) !important;
+  border-bottom: 1px solid var(--col-bg-800) !important;
+}
+
+body.dark a {
+  color: var(--col-acc-500) !important;
+}
+
+body.dark a i {
+  color: var(--col-light-500) !important;
+}
+
+body.dark #captains_log_alert {
+  background-color: var(--col-acc-400) !important;
+  border-bottom: 1px solid var(--col-acc-400) !important;
+  filter: drop-shadow(0 0 -1px var(--col-bg-400)) !important;
+  color: var(--col-light-500) !important;
+}
+
+@media (max-width: 767px) {
+  body.dark #captains_log_alert {
+    filter: drop-shadow(0 0 10px var(--col-bg-400)) !important;
+  }
+}
+
+body.dark #search-bar {
+  background-color: var(--col-acc-400) !important;
+}
+
+body.dark #search-bar::placeholder {
+  color: var(--col-light-500) !important;
+}
+
+body.dark~.dhtmlXTooltip.tooltip {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+  border-left: 1px solid var(--col-bg-400) !important;
+  border-top: 1px solid var(--col-bg-400) !important;
+  filter: drop-shadow(0 0 5px var(--col-bg-400)) !important;
+  box-shadow: 0 0 0 var(--col-bg-clear) !important;
+}
+
+body.dark~.tooltip .tooltip-inner
+, body.dark .tooltip-inner {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-400) !important;
+  filter: drop-shadow(0 0 5px var(--col-bg-500));
+}
+
+body.dark .alert-danger {
+  background-color: var(--col-bg-400) !important;
+  border: none !important;
+  color: var(--col-acc-500) !important;
+}
+
+body.dark .field_with_errors {
+  color: var(--col-acc-500) !important;
+}
+/* Generic styles ends here */
+
+/* Login styles */
+body.dark .logged_out_form {
+  background-color: var(--col-bg-700) !important;
+  border: 1px solid var(--col-bg-800) !important;
+  box-shadow: 0 0 var(--col-bg-clear) !important;
+}
+
+body.dark .hbtn_logo {
+  filter: invert(1);
+  transform: rotate(0deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  11% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Login styles ends here */
+
+/* Navigation styles */
+body.dark .logo-container {
+  background-color: var(--col-bg-400) !important;
+  border-right: none !important;
+  border-bottom-color: var(--col-bg-800) !important;
+}
+
+body.dark .sidebar>ul>li:last-child {
+  background-color: var(--col-bg-400) !important;
+  border-right: none !important;
+  border-top-color: var(--col-bg-800) !important;
+}
+
+body.dark .sidebar {
+  background-color: var(--col-bg-400) !important;
+  border-right: none !important;
+  filter: drop-shadow(0px 0px 2px var(--col-bg-400)) !important;
+}
+
+body.dark .logo {
+  filter: invert(1) hue-rotate(180deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+body.dark .navbar-header {
+  background-color: var(--col-bg-400) !important;
+  filter: drop-shadow(0 0 5px var(--col-bg-500));
+}
+
+body.dark .navbar {
+  border: none !important;
+}
+
+body.dark .navbar-toggle {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .navbar-default .navbar-toggle:hover
+, body.dark .navbar-default .navbar-toggle:focus {
+  background-color: var(--col-bg-500) !important;
+}
+
+body.dark .icon-bar {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .navbar-collapse {
+  background-color: var(--col-bg-400) !important;
+  border-top: none !important;
+}
+
+body.dark .nav.navbar-nav {
+  margin-top: 0 !important;
+}
+
+body.dark .navbar-toggle .icon-bar {
+  background-color: var(--col-acc-400) !important;
+  transition: opacity 500ms ease, background-color 500ms ease, transform 500ms ease, top 500ms ease, bottom 500ms ease;
+  opacity: 1;
+  position: relative;
+}
+
+body.dark .navbar-toggle.collapsed .icon-bar {
+  position: relative;
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 5px;
+  transform: rotate(45deg) translateY(100%);
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+body.dark .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  bottom: 4px;
+  transform: rotate(-45deg) translateY(-100%);
+}
+
+body.dark .topbar.navbar-default .navbar-collapse {
+  border-bottom-color: var(--col-bg-600) !important;
+}
+
+body.dark .navigation>ul>li a .visible-xs {
+  color: var(--col-light-500);
+}
+
+body.dark .navigation>ul>li a .image:hover
+, body.dark .navigation>ul>li a .icon:hover {
+  background-color: var()--col-acc-400 !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .navigation>ul>li a .image
+, body.dark .navigation>ul>li a .icon {
+  transition: background-color 200ms ease, color 200ms ease, transition 200ms;
+}
+
+body.dark .navigation>ul>li {
+  margin: 0;
+}
+
+body.dark .slack {
+  transition: transform 300ms ease-in-out, background-color 300ms ease !important;
+}
+
+@media (min-width: 768px) {
+  body.dark .slack:hover {
+    background-color: var(--col-bg-clear) !important;
+    transform: rotate(170deg);
+  }
+}
+/* Navigation styles ends here */
+
+/* Main styles */
+body.dark .user-select-none {
+  box-shadow: 0 0 10px 2px var(--col-bg-500) !important;
+}
+
+body.dark .list-group-item {
+  border: none !important;
+}
+
+body.dark a.list-group-item {
+  color: var(--col-light-500) !important;
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark button.list-group-item {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel li.list-group-item {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark li.list-group-item {
+  background-color: var(--col-bg-600) !important;
+  margin-bottom: 10px;
+}
+
+body.dark .text-muted {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .alert-info {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+  border: none !important;
+}
+
+body.dark .label-default {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel-default>.panel-heading {
+  border-bottom: 1px solid var(--col-bg-700) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel-group>.panel-default:first-child>.panel-heading {
+  border: none !important;
+}
+
+body.dark .panel-heading {
+  background-color: var(--col-bg-clear) !important;
+  border: none !important;
+}
+
+body.dark .panel {
+  box-shadow: 2px 2px 1px 1px var(--col-bg-800) !important;
+  background-color: var(--col-bg-800) !important;
+  border: none !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel-title {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel-heading-actions .panel-title {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark i.panel-title-icon {
+  background-color: var(--col-bg-800) !important;
+  border: 1px solid var(--col-light-500) !important;
+}
+
+body.dark .panel-group .panel-heading+.panel-collapse>.list-group {
+  border-top: none !important;
+}
+
+body.dark .table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: var(--col-bg-700) !important;
+}
+
+body.dark .table>thead>tr>th {
+  border-bottom: none !important;
+}
+
+body.dark .table>tbody>tr>td {
+  border-top: none !important;
+}
+
+body.dark .modal-content.dark .list-group-item {
+  background-color: var(--col-bg-600) !important;
+  border-bottom: 1px solid var(--col-bg-500) !important;
+  margin-bottom: 0 !important;
+}
+
+body.dark .modal-content {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-400) !important;
+}
+
+body.dark .modal-header {
+  border-bottom: 1px solid var(--col-bg-500) !important;
+}
+
+body.dark a {
+  transition: color 200ms ease;
+}
+
+body.dark a:hover {
+  color: var(--col-light-500) !important;
+  text-decoration: none !important;
+}
+
+body.dark .modal-body #search-error-message {
+    color: var(--col-light-500) !important;
+}
+
+body.dark .modal-footer {
+  border-top: 1px solid var(--col-bg-800) !important;
+}
+
+body.dark .border-white {
+  border-color: var(--col-light-500) !important;
+}
+
+body.dark .close {
+  color: var(--col-light-400) !important;
+  opacity: 1;
+}
+
+body.dark .close:hover {
+  color: var(--col-light-500) !important;
+}
+
+/* Events section - All Events */
+body.dark .nav-tabs {
+  border-bottom: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .nav-tabs>li>a {
+  border: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .nav-tabs>li>a:hover {
+  border-color: var(--col-bg-600) !important;
+}
+
+body.dark .nav>li>a {
+  background-color: var(--col-bg-600) !important;
+}
+
+body.dark .nav>li>a:hover {
+  background-color: var(--col-bg-500) !important;
+}
+
+body.dark .nav-tabs>li.active>a {
+  background-color: var(--col-bg-clear) !important;
+  color: var(--col-light-500) !important;
+  border-bottom: 1px solid var(--col-bg-500) !important;
+}
+
+body.dark .btn-default {
+  background-color: var(--col-bg-500) !important;
+  border: 1px solid var(--col-bg-800) !important;
+}
+
+body.dark .btn-default:hover .fa {
+  background-color: var(--col-bg-400) !important;
+  border: 1px solid var(--col-bg-800) !important;
+  color: var(--col-acc-400) !important;
+}
+
+body.dark .task-card .btn-default:hover .fa {
+  border: none !important;
+}
+
+body.dark button.btn-default {
+  color: var(--col-light-500) !important;
+}
+
+/* My planning section */
+/* Month view and generic elements */
+body.dark .dhx_cal_container {
+  background-color: var(--col-bg-800) !important;
+  filter: drop-shadow(0 1px 2px var(--col-bg-400)) !important;
+}
+
+body.dark .dhx_now .dhx_month_body {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .dhx_now .dhx_month_head {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .dhx_before .dhx_month_body {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .dhx_before .dhx_month_head {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-800) !important;
+}
+
+body.dark .dhx_after .dhx_month_body {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .dhx_after .dhx_month_head {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-800) !important;
+}
+
+body.dark .dhx_month_head {
+  background-color: var(--col-bg-800) !important;
+  color: var(--col-light-500) !important;
+  border-right-color: var(--col-bg-600);
+}
+
+body.dark .dhx_cal_navline {
+  background-color: var(--col-bg-400);
+}
+
+body.dark .dhx_cal_navline div {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .dhx_cal_prev_button
+, body.dark .dhx_cal_next_button {
+  filter: invert(1);
+}
+
+body.dark .dhx_cal_today_button {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .dhx_cal_navline .dhx_cal_tab.active
+, body.dark .dhx_cal_navline .dhx_cal_my_button.active {
+  background-color: var(--col-acc-400) !important;
+  border-color: var(--col-acc-400) !important;
+}
+
+body.dark .dhx_cal_tab {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .dhx_cal_my_button {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .dhx_scale_bar {
+  background-color: var(--col-bg-800) !important;
+  color: var(--col-light-500) !important;
+  border-left-color: var(--col-bg-600) !important;
+}
+
+body.dark .dhx_cal_header {
+  border: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_month_body {
+  background-color: var(--col-bg-500) !important;
+  border-right: 1px solid var(--col-bg-600) !important;
+  border-bottom: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_cal_event_line {
+  color: var(--col-bg-400) !important;
+  filter: hue-rotate(-10deg);
+}
+
+body.dark .dhx_cal_event_clear {
+  color: var(--col-bg-400) !important;
+}
+
+/* Events section - Calendar */
+body.dark .dhx_cal_navline.dhx_cal_navline_flex .dhx_cal_tab {
+  box-shadow: 0 0 var(--col-bg-clear) !important;
+  border-left-style: solid !important;
+}
+
+body.dark .event {
+  color: var(--col-light-500) !important;
+}
+
+/* Daily & Weekly view */
+body.dark .dhx_scale_bar {
+  background-color: var(--col-bg-800) !important;
+  color: var(--col-light-500) !important;
+  border-left: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_multi_day {
+  background-color: var(--col-bg-400) !important;
+  border-top: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_multi_day_icon {
+  background-color: var(--col-bg-800) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--col-bg-600) !important;
+  border-right: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_multi_day_icon_small {
+  background-color: var(--col-bg-800) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--col-bg-600) !important;
+  border-right: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_scale_holder_now {
+  border-right: 1px solid var(--col-bg-600) !important;
+  background-color: var(--col-bg-800) !important;
+  background-blend-mode: multiply;
+}
+
+body.dark .dhx_scale_holder {
+  background-color: var(--col-bg-400) !important;
+  background-blend-mode: multiply;
+  border-right: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_scale_hour {
+  background-color: var(--col-bg-800) !important;
+  border-bottom: 1px solid var(--col-bg-600) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .dhx_cal_data {
+  border-top: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .dhx_title {
+  color: var(--col-bg-400) !important;
+}
+
+body.dark .dhx_body {
+  color: var(--col-bg-400) !important;
+}
+/* My planning section styles end here */
+
+/* Sandbox styles */
+body.dark .btn-danger {
+  background-color: var(--col-acc-400) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .btn-warning {
+  color: var(--col-bg-400) !important;
+}
+/* Sandbox styles ends here */
+
+/* Conference room */
+body.dark .btn.btn-info {
+  background-color: var(--col-bg-800) !important;
+  border-color: var(--col-bg-700) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .btn.btn-info:hover {
+  background-color: var(--col-bg-700) !important;
+  color: var(--col-light-400) !important;
+  border-color: var(--col-bg-700) !important;
+}
+/* Conference room ends here */
+
+/* Video on demand */
+body.dark div.list-group-item {
+  background-color: var(--col-bg-clear) !important;
+}
+/* Video on demand styles ends here */
+
+/* My Profile styles */
+body.dark .form-control {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+  border: 1px solid var(--col-bg-400) !important;
+}
+
+body.dark .form-control[disabled] {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .btn-primary {
+  color: var(--col-light-500) !important;
+  background-color: var(--col-acc-400) !important;
+  border: 1px solid var(--col-acc-400) !important;
+}
+/* My Profile styles ends here */
+
+/* Captains log stlye */
+body.dark .alert-success {
+  background-color: var(--col-bg-400) !important;
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .tt-menu {
+  background-color: var(--col-bg-600) !important;
+  border: 1px solid var(--col-bg-600) !important;
+}
+
+body.dark .tt-suggestion:hover {
+  background-color: var(--col-bg-800) !important;
+  cursor: pointer;
+}
+
+body.dark .tokenfield .token {
+  background-color: var(--col-bg-800) !important;
+  border: 1px solid var(--col-bg-800) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .tokenfield .token:hover {
+  border-color: var(--col-bg-800) !important;
+}
+
+body.dark .tokenfield .token .close {
+  color: var(--col-light-400) !important;
+}
+
+body.dark .clean.well.gray {
+  background-color: var(--col-bg-800) !important;
+  border: none !important;
+}
+/* Captains log styles ends here */
+
+/* Evaluation styles */
+body.dark pre {
+  background-color: var(--col-bg-400) !important;
+  border: none !important;
+  filter: drop-shadow(0 0 1px var(--col-bg-400)) !important;
+}
+/* Evaluation styles ends here */
+
+/* Project style */
+body.dark .well {
+  border: none !important;
+  background-color: var(--col-bg-500) !important;
+}
+
+body.dark .clean.well {
+  background-color: var(--col-bg-600) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .label-info {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.dark .task_progress_score_bar {
+  background-color: var(--col-bg-400) !important;
+  border: none !important;
+}
+
+body.dark .task_progress_bar {
+  background: repeating-linear-gradient(-45deg, var(--col-bg-400), var(--col-bg-400) 10px, var(--col-bg-800) 10px, var(--col-bg-800) 20px) !important;
+}
+
+body.dark .task_score_bar {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .task_progress_score_text {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .panel-footer {
+  border: none !important;
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .student_task_done.yes {
+  background-color: var(--col-code-pass) !important;
+}
+
+body.dark .users-done-modal .list-group .user {
+  border: none !important;
+  background-color: var(--col-bg-500) !important;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+body.dark .task_correction_modal .check-inline {
+  color: var(--col-light-500) !important;
+}
+
+body.dark .timeline-event-head:hover {
+  background-color: var(--col-bg-400) !important;
+}
+
+body.dark .check-inline.requirement.success
+, body.dark .timeline-event.passed.requirement {
+  background-color: var(--col-requirement-pass) !important;
+}
+
+body.dark .check-inline.requirement.fail
+, body.dark .timeline-event.failed.requirement {
+  background-color: var(--col-requirement-fail) !important;
+}
+
+body.dark .check-inline.code.success
+, body.dark .timeline-event.passed.code {
+  background-color: var(--col-code-pass) !important;
+}
+
+body.dark .check-inline.code.fail
+, body.dark .timeline-event.failed.code {
+  background-color: var(--col-code-fail) !important;
+}
+
+body.dark .check-inline.efficiency.success
+, body.dark .timeline-event.passed.efficiency  {
+  background-color: var(--col-efficiency-success) !important;
+}
+
+body.dark .check-inline.efficiency.fail
+, body.dark .timeline-event.failed.efficiency  {
+  background-color: var(--col-efficiency-fail) !important;
+}
+
+body.dark .check-inline.answer.success
+, body.dark .timeline-event.passed.answer  {
+  background-color: var(--col-answer-success) !important;
+}
+
+body.dark .check-inline.answer.fail
+, body.dark .timeline-event.failed.answer  {
+  background-color: var(--col-answer-fail) !important;
+}
+
+body.dark .correction_reason {
+  border: none !important;
+  background-color: var(--col-bg-500) !important;
+  filter: drop-shadow(0 0 1px var(--col-bg-400));
+}
+
+body.dark .blog_post_div {
+  background-color: var(--col-bg-500) !important;
+  border: none !important;
+  filter: drop-shadow(0 0 1px var(--col-bg-400));
+}
+
+body.dark .correction-request-timeline {
+  color: var(--col-light-500) !important;
+}
+/* Project styles ends here */
+
+/* Event reservation styles */
+body.dark .btn-success {
+  background-color: var(--col-code-pass) !important;
+}
+
+body.dark .btn-success.dark+.btn-default {
+  background-color: var(--col-acc-400) !important;
+}
+
+body.dark .tab-pane .well {
+  background-color: var(--col-bg-400) !important;
+}
+/* Event reservation styles ends here */
+/* Main styles ends here */

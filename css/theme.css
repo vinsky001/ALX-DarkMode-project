@@ -25,7 +25,6 @@
 .card-content {
   padding: 10px 0;
   transition: background-color 500ms ease-in, color 500ms ease-in;
-
 }
 
 .card-body.dark-theme {
