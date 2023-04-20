@@ -239,10 +239,6 @@ body.dark .navigation>ul>li a .image
   transition: background-color 200ms ease, color 200ms ease, transition 200ms;
 }
 
-body.dark .navigation>ul>li {
-  margin: 0;
-}
-
 body.dark .slack {
   transition: transform 300ms ease-in-out, background-color 300ms ease !important;
 }
