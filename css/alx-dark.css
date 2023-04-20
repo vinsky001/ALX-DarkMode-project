@@ -155,7 +155,7 @@ body.dark .sidebar>ul>li:last-child {
 body.dark .sidebar {
   background-color: var(--col-bg-400) !important;
   border-right: none !important;
-  filter: drop-shadow(0px 0px 2px var(--col-bg-400)) !important;
+  box-shadow: 0 0 1px 5px var(--col-bg-400);
 }
 
 body.dark .logo {
@@ -237,10 +237,6 @@ body.dark .navigation>ul>li a .image:hover
 body.dark .navigation>ul>li a .image
 , body.dark .navigation>ul>li a .icon {
   transition: background-color 200ms ease, color 200ms ease, transition 200ms;
-}
-
-body.dark .navigation>ul>li {
-  margin: 0;
 }
 
 body.dark .slack {
