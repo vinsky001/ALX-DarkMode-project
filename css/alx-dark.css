@@ -249,6 +249,14 @@ body.dark .slack {
     transform: rotate(170deg);
   }
 }
+
+body.dark .navbar-fixed-top > .navigation > ul > li {
+  margin: 0 !important;
+}
+
+body.dark .navbar-fixed-top > .navigation > ul > li > a {
+  padding: 13px 13px !important;
+}
 /* Navigation styles ends here */
 
 /* Main styles */
