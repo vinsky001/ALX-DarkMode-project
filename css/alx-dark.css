@@ -62,13 +62,6 @@ body.dark a i {
   color: var(--col-light-500) !important;
 }
 
-body.dark #captains_log_alert {
-  background-color: var(--col-acc-400) !important;
-  border-bottom: 1px solid var(--col-acc-400) !important;
-  filter: drop-shadow(0 0 -1px var(--col-bg-400)) !important;
-  color: var(--col-light-500) !important;
-}
-
 @media (max-width: 767px) {
   body.dark #captains_log_alert {
     filter: drop-shadow(0 0 10px var(--col-bg-400)) !important;
@@ -654,6 +647,16 @@ body.dark .btn-primary {
 /* My Profile styles ends here */
 
 /* Captains log stlye */
+body.dark #captains_log_alert {
+  background-color: var(--col-acc-400) !important;
+  border-bottom: 1px solid var(--col-acc-400) !important;
+  filter: drop-shadow(0 0 -1px var(--col-bg-400)) !important;
+}
+
+body.dark #captains_log_alert > a {
+  color: var(--col-light-500) !important;
+}
+
 body.dark .alert-success {
   background-color: var(--col-bg-400) !important;
   border-color: var(--col-bg-800) !important;
