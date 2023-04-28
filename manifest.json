@@ -4,21 +4,39 @@
     "description": "ALX Intranet Theme Selector",
     "manifest_version": 3,
     "action": {
-        "default_action": "ALX DarkMode Reader",
-        "default_popup": "theme.html"
+        "default_action": "ALX Intranet Theme Selector",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/16px.png",
+            "32": "icons/48px.png",
+            "48": "icons/128px.png"
+        }
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "icons": {
+        "16": "icons/16px.png",
+        "32": "icons/48px.png",
+        "48": "icons/128px.png"
     },
     "content_scripts": [
         {
             "matches": [
                 "https://intranet.alxswe.com/*"
             ],
-            "js": ["js/app.js"],
-            "css": ["css/alx-dark.css"],
-            "run_at": "document_end"
+            "js": [
+                "js/content-script.js"
+            ],
+            "css": [
+                "css/alx-dark.css"
+            ],
+            "run_at": "document_start"
         }
     ],
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage"
     ]
 }
