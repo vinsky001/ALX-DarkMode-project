@@ -6,7 +6,6 @@ const toggleDark = function () {
   addClasses(fetch(".hidden-xs.navigation.sidebar"));
 
   function fetch(selector) {
-    console.log(document);
     return document.querySelectorAll(selector);
   }
 
