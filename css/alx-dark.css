@@ -8,8 +8,12 @@
   --col-bg-800: #383A40;
 
   /* Accent colors */
-  --col-acc-400: #db3e3e;
+  --col-acc-400: #df3e3e;
   --col-acc-500: #f36262;
+
+  /* Code custom colors*/
+  --col-code-color: #DD9444;
+  --col-code-bg: #2B2D30;
 
   /* Colors for the checker */
   --col-code-pass: #31572c;
@@ -45,8 +49,12 @@ body.dark hr {
 }
 
 body.dark code {
-  background-color: var(--col-bg-400) !important;
-  color: var(--col-acc-500) !important;
+  background-color: var(--col-code-bg) !important;
+  color: var(--col-code-color) !important;
+}
+
+code {
+	background-color: var(--col-code-bg) !important;
 }
 
 body.dark table>thead {
@@ -267,7 +275,7 @@ body.dark a.list-group-item {
 }
 
 body.dark button.list-group-item {
-  color: var(--col-light-500) !important;
+  color: var(--col-light-800) !important;
 }
 
 body.dark .panel li.list-group-item {
@@ -694,7 +702,7 @@ body.dark .clean.well.gray {
 
 /* Evaluation styles */
 body.dark pre {
-  background-color: var(--col-bg-400) !important;
+  background-color: var(--col-code-bg) !important;
   border: none !important;
   filter: drop-shadow(0 0 1px var(--col-bg-400)) !important;
 }
