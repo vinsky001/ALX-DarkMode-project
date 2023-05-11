@@ -53,7 +53,7 @@ body.dark code {
   color: var(--col-code-color) !important;
 }
 
-code {
+dark code {
 	background-color: var(--col-code-bg) !important;
 }
 
