@@ -15,10 +15,10 @@
   --col-code-color: #e55039;
 
   /* Colors for the checker */
-  --col-code-pass: #31572c;
-  --col-code-fail: #541919;
-  --col-requirement-pass: #284724;
-  --col-requirement-fail: #431515;
+  --col-code-pass: #284724;
+  --col-code-fail: #521b1b;
+  --col-requirement-pass: #28472466;
+  --col-requirement-fail: #521b1b66;
   --col-efficiency-success: #291531;
   --col-efficiency-fail: #7d6e18;
   --col-answer-success: #151a48;
@@ -699,11 +699,23 @@ body.dark .clean.well.gray {
 }
 /* Captains log styles ends here */
 
-/* Evaluation styles */
+/* Evaluation styles begins here */
 body.dark pre {
 	background-color: var(--col-bg-400) !important;
 	border: none !important;
 	filter: drop-shadow(0 0 1px var(--col-bg-400)) !important;
+}
+
+body.dark .evaluation-quiz>.header .level1 {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+  box-shadow: 0 5px 5px var(--col-bg-500);
+}
+
+body.dark .evaluation-quiz>div {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-light-500) !important;
+  box-shadow: 0 5px 5px var(--col-bg-500);
 }
 /* Evaluation styles ends here */
 
