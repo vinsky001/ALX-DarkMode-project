@@ -840,4 +840,11 @@ body.dark .tab-pane .well {
   background-color: var(--col-bg-400) !important;
 }
 /* Event reservation styles ends here */
+
+/* Dashboard styles */
+
+body.dark .panel .list-group-item.in_second_deadline {
+  background-color: var(--col-bg-600) !important;
+}
+/* Dashboard styles ends here */
 /* Main styles ends here */
