@@ -156,7 +156,6 @@ body.dark .sidebar {
 
 body.dark .logo {
   filter: invert(1) hue-rotate(180deg);
-  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
 }
 
 body.dark .navbar-header {
