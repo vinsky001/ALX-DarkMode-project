@@ -52,10 +52,6 @@ body.dark code {
   color: var(--col-code-color) !important;
 }
 
-dark code {
-	background-color: var(--col-code-bg) !important;
-}
-
 body.dark table>thead {
   background-color: var(--col-bg-clear) !important;
   border-bottom: 1px solid var(--col-bg-800) !important;
