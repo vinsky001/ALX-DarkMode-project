@@ -52,10 +52,6 @@ body.dark code {
   color: var(--col-code-color) !important;
 }
 
-dark code {
-	background-color: var(--col-code-bg) !important;
-}
-
 body.dark table>thead {
   background-color: var(--col-bg-clear) !important;
   border-bottom: 1px solid var(--col-bg-800) !important;
@@ -160,7 +156,6 @@ body.dark .sidebar {
 
 body.dark .logo {
   filter: invert(1) hue-rotate(180deg);
-  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
 }
 
 body.dark .navbar-header {
@@ -528,13 +523,12 @@ body.dark .dhx_month_body {
   border-bottom: 1px solid var(--col-bg-600) !important;
 }
 
-body.dark .dhx_cal_event_line {
-  color: var(--col-bg-400) !important;
-  filter: hue-rotate(-10deg);
-}
-
-body.dark .dhx_cal_event_clear {
-  color: var(--col-bg-400) !important;
+body.dark .dhx_cal_event_line
+, body.dark .dhx_cal_event_clear {
+  color: var(--col-light-400) !important;
+  text-shadow: 0 0 10px #000;
+  background-image: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,0)) !important;
+  /* filter: hue-rotate(-10deg); */
 }
 
 /* Events section - Calendar */
@@ -846,4 +840,11 @@ body.dark .tab-pane .well {
   background-color: var(--col-bg-400) !important;
 }
 /* Event reservation styles ends here */
+
+/* Dashboard styles */
+
+body.dark .panel .list-group-item.in_second_deadline {
+  background-color: var(--col-bg-600) !important;
+}
+/* Dashboard styles ends here */
 /* Main styles ends here */
