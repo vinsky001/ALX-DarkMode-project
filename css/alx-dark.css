@@ -524,11 +524,13 @@ body.dark .dhx_month_body {
 }
 
 body.dark .dhx_cal_event_line
-, body.dark .dhx_cal_event_clear {
+, body.dark .dhx_cal_event_clear
+, body.dark .dhx_body
+, body.dark .dhx_title
+, body.dark .dhx_footer {
   color: var(--col-light-400) !important;
   text-shadow: 0 0 10px #000;
   background-image: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,0)) !important;
-  /* filter: hue-rotate(-10deg); */
 }
 
 /* Events section - Calendar */
