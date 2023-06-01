@@ -590,14 +590,6 @@ body.dark .dhx_scale_hour {
 body.dark .dhx_cal_data {
   border-top: 1px solid var(--col-bg-600) !important;
 }
-
-body.dark .dhx_title {
-  color: var(--col-bg-400) !important;
-}
-
-body.dark .dhx_body {
-  color: var(--col-bg-400) !important;
-}
 /* My planning section styles end here */
 
 /* Sandbox styles */
@@ -708,10 +700,40 @@ body.dark .evaluation-quiz>.header .level1 {
   box-shadow: 0 5px 5px var(--col-bg-500);
 }
 
-body.dark .evaluation-quiz>div {
-  background-color: var(--col-bg-400) !important;
-  color: var(--col-light-500) !important;
-  box-shadow: 0 5px 5px var(--col-bg-500);
+body.dark .evaluation-quiz > .header .level1 .center .time-progress .progress {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.dark .evaluation-quiz .question {
+  box-shadow: 0 0 8px var(--col-bg-400);
+  border-radius: 15px !important;
+}
+
+body.dark .evaluation-quiz .question .header {
+  border: none !important;
+  background-color: var(--col-bg-600) !important;
+}
+
+body.dark .evaluation-quiz .question form {
+  border: none !important;
+}
+
+body.dark .evaluation-quiz .question form .answer-option-container .answer-option {
+  padding: 10px !important;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 10px !important;
+}
+
+body.dark .evaluation-quiz .question form .answer-option-container .answer-option:hover {
+  background-color: var(--col-bg-600) !important;
+}
+
+body.dark .CircularProgressbar .CircularProgressbar-trail {
+  stroke: var(--col-bg-800) !important;
+}
+
+body.dark .CircularProgressbar .CircularProgressbar-text {
+  transform: translateX(-20%) translateY(5%);
 }
 /* Evaluation styles ends here */
 
