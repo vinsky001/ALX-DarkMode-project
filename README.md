@@ -26,16 +26,11 @@ ALX SE Theme Selector is very easy to use. Once you have installed the extension
 NB: If you don't see it, click on the extension icon on your toolbar, locate the ALX SE Theme Selector icon and pin it to your toolbar by clicking on the pin icon beside it.
 
 ## Contributing
-If you would like to contribute to ALX SE Theme Selector, please follow these steps:
-***
-* Fork the repository on GitHub.
-* Create a new branch with your changes: git checkout -b <new-branch-name>.
-* Make your changes and commit them: git commit -am 'Add some feature'.
-* Push to the branch: git push origin my-branch.
-* Submit a pull request.
+If you would like to contribute to ALX SE Theme Selector, please make sure to read the [Contributing Guide](https://github.com/vinsky001/ALX-DarkMode-project/blob/main/CONTRIBUTING.md) .
 
+Thank you to all the people who already contributed to ALX SE Theme Selector!
 ## License
-ALX SE Theme Selector is licensed under the MIT License. See the LICENSE file for more information.
+ALX SE Theme Selector is licensed under the [MIT](https://opensource.org/licenses/MIT) License. See the [LICENSE documentation](https://github.com/vinsky001/ALX-DarkMode-project/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements
 ALX SE Theme Selector was built by a selection of ALX SE Students. Special thanks to [Elvis](https://github.com/vinsky001) and [Julien](https://github.com/jbarbier).
