@@ -11,8 +11,9 @@
   --col-acc-400: #df3e3e;
   --col-acc-500: #f36262;
 
-  /* Code custom colors*/
+ /* Custom colors*/
   --col-code-color: #e55039;
+  --col-quiz-pass: #38b000;
 
   /* Colors for the checker */
   --col-code-pass: #284724;
@@ -871,4 +872,14 @@ body.dark .panel .list-group-item.in_second_deadline {
   background-color: var(--col-bg-600) !important;
 }
 /* Dashboard styles ends here */
+
+/* Quiz styles starts here */
+body.dark .alert-info + .quiz_questions_show_container input:checked ~ label *:is(code) {
+  background-color: var(--col-bg-clear) !important;
+}
+
+body.dark .alert-info + .quiz_questions_show_container input:checked ~ label * {
+  color: var(--col-quiz-pass) !important;
+}
+/* Quiz styles ends here */
 /* Main styles ends here */
