@@ -1,4 +1,4 @@
-# ALX SE Intranet Theme Selector - Chrome Extension
+![image](https://github.com/vinsky001/ALX-DarkMode-project/assets/84249407/c326edce-284e-4a20-a985-f81e76440b92)# ALX SE Intranet Theme Selector - Chrome Extension
 
 ### This is a simple chrome extension for The ALX SE Intranet Dashboard. The extension allows you to switch between two themes - light mode (by default) and dark mode. It provides an easy and convenient way to change the theme of your browsing (learning) experience, making it more comfortable for your eyes by generating a dark mode that aims to reduce the eyestrain of the user.
 
@@ -8,7 +8,7 @@
 ***
 To install ALX SE Theme Selector:
 * Simply goto the Chrome Extension Webstore
-* Search for "ALX SE Theme Selector"
+* Search for "ALX Intranet Theme Selector"
 * Click on the name in the ensuing result
 * Click "Add to Chrome"
 
