@@ -1,4 +1,4 @@
-# ALX SE Intranet Theme Selector - Chrome Extension
+# ALX Intranet Theme Selector - Chrome Extension
 
 ### This is a simple chrome extension for The ALX SE Intranet Dashboard. The extension allows you to switch between two themes - light mode (by default) and dark mode. It provides an easy and convenient way to change the theme of your browsing (learning) experience, making it more comfortable for your eyes by generating a dark mode that aims to reduce the eyestrain of the user.
 
@@ -6,9 +6,9 @@
 
 ## Installation
 ***
-To install ALX SE Theme Selector:
+To install ALX Intranet Theme Selector:
 * Simply goto the Chrome Extension Webstore
-* Search for "ALX SE Theme Selector"
+* Search for "ALX Intranet Theme Selector"
 * Click on the name in the ensuing result
 * Click "Add to Chrome"
 
@@ -21,16 +21,16 @@ You can also follow the steps below if you encountered any issue with the first 
 * Click on the "Load unpacked" button and select the directory where you extracted the extension package.
 
 ## Usage
-ALX SE Theme Selector is very easy to use. Once you have installed the extension, you will see the extension icon in your Chrome toolbar that represents the theme selector. Click on the icon and choose your mode to switch between light mode (default) or dark mode.
+ALX Intranet Theme Selector is very easy to use. Once you have installed the extension, you will see the extension icon in your Chrome toolbar that represents the theme selector. Click on the icon and choose your mode to switch between light mode (default) or dark mode.
 
 NB: If you don't see it, click on the extension icon on your toolbar, locate the ALX SE Theme Selector icon and pin it to your toolbar by clicking on the pin icon beside it.
 
 ## Contributing
 If you would like to contribute to ALX SE Theme Selector, please make sure to read the [Contributing Guide](https://github.com/vinsky001/ALX-DarkMode-project/blob/main/CONTRIBUTING.md) .
 
-Thank you to all the people who already contributed to ALX SE Theme Selector!
+Thank you to all the people who already contributed to ALX Intranet Theme Selector!
 ## License
-ALX SE Theme Selector is licensed under the [MIT](https://opensource.org/licenses/MIT) License. See the [LICENSE documentation](https://github.com/vinsky001/ALX-DarkMode-project/blob/main/LICENSE.md) for more information.
+ALX Intranet Theme Selector is licensed under the [MIT](https://opensource.org/licenses/MIT) License. See the [LICENSE documentation](https://github.com/vinsky001/ALX-DarkMode-project/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements
-ALX SE Theme Selector was built by a selection of ALX SE Students. Special thanks to [Elvis](https://github.com/vinsky001) and [Julien](https://github.com/jbarbier).
+ALX Intranet Theme Selector was built by a selection of ALX SE Students. Special thanks to [Elvis](https://github.com/vinsky001) and [Julien](https://github.com/jbarbier).
