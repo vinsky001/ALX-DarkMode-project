@@ -7,8 +7,14 @@
   --col-bg-700: #313338;
   --col-bg-800: #383A40;
 
-  /* Bacground color for current date on the Events Calendar*/
+  /* Bacground color for current date on the Events Calendar */
   --col-current-date: #888672;
+
+  /* Bacground color for project in second deadline */
+  --col-second-deadline: #ff00002b;
+
+  /* Text color for project link in second deadline */
+  --col-second-deadline-link: #c8bfbf;
 
   /* Accent colors */
   --col-acc-400: #df3e3e;
@@ -872,7 +878,11 @@ body.dark .tab-pane .well {
 /* Dashboard styles */
 
 body.dark .panel .list-group-item.in_second_deadline {
-  background-color: var(--col-bg-600) !important;
+  background-color: var(--col-second-deadline) !important;
+}
+
+body.dark .panel .list-group-item.in_second_deadline a {
+  color: var(--col-second-deadline-link) !important;
 }
 /* Dashboard styles ends here */
 
