@@ -876,21 +876,12 @@ body.dark .tab-pane .well {
 /* Event reservation styles ends here */
 
 /* Dashboard styles */
-
 body.dark .panel .list-group-item.in_second_deadline {
   background-color: var(--col-second-deadline) !important;
 }
-
-body.dark .panel .list-group-item.in_second_deadline a {
-  color: var(--col-second-deadline-link) !important;
-}
-
-body.dark .panel .list-group-item.in_second_deadline a:hover {
-  color: var(--col-light-400) !important;
-}
 /* Dashboard styles ends here */
 
-/* Pending logs styles starts here */
+/* Second deadline styles starts here */
 body.dark .list-group-item.in_second_deadline {
   background-color: var(--col-second-deadline) !important;
 }
@@ -902,7 +893,7 @@ body.dark .list-group-item.in_second_deadline a {
 body.dark .list-group-item.in_second_deadline a:hover {
   color: var(--col-light-400) !important;
 }
-/* Pending logs styles end here */
+/* Second deadline styles end here */
 
 /* Quiz styles starts here */
 body.dark .alert-info + .quiz_questions_show_container input:checked ~ label *:is(code) {
