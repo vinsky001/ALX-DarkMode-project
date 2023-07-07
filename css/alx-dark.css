@@ -886,6 +886,16 @@ body.dark .panel .list-group-item.in_second_deadline a {
 }
 /* Dashboard styles ends here */
 
+/* Pending logs styles starts here */
+body.dark .pending_logs .list-group-item.in_second_deadline {
+  background-color: var(--col-second-deadline) !important;
+}
+
+body.dark .pending_logs .list-group-item.in_second_deadline a {
+  color: var(--col-second-deadline-link) !important;
+}
+/* Pending logs styles end here */
+
 /* Quiz styles starts here */
 body.dark .alert-info + .quiz_questions_show_container input:checked ~ label *:is(code) {
   background-color: var(--col-bg-clear) !important;
