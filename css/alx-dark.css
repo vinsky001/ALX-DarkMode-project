@@ -884,15 +884,23 @@ body.dark .panel .list-group-item.in_second_deadline {
 body.dark .panel .list-group-item.in_second_deadline a {
   color: var(--col-second-deadline-link) !important;
 }
+
+body.dark .panel .list-group-item.in_second_deadline a:hover {
+  color: var(--col-light-400) !important;
+}
 /* Dashboard styles ends here */
 
 /* Pending logs styles starts here */
-body.dark .pending_logs .list-group-item.in_second_deadline {
+body.dark .list-group-item.in_second_deadline {
   background-color: var(--col-second-deadline) !important;
 }
 
-body.dark .pending_logs .list-group-item.in_second_deadline a {
+body.dark .list-group-item.in_second_deadline a {
   color: var(--col-second-deadline-link) !important;
+}
+
+body.dark .list-group-item.in_second_deadline a:hover {
+  color: var(--col-light-400) !important;
 }
 /* Pending logs styles end here */
 
