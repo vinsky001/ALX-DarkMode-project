@@ -69,3 +69,25 @@ const toggleLight = function () {
     }
   });
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  var listGroupItems = document.querySelectorAll('.list-group-item');
+    
+  // Loop through each list-group-item element
+  for (var i = 0; i < listGroupItems.length; i++) {
+    var listGroupItem = listGroupItems[i];
+    var bpiStatusSpan = listGroupItem.querySelector('.bpi-status');
+      
+    // Check if list-group-item has a child element with class "bpi-status"
+    if (bpiStatusSpan) {
+      var strongElement = bpiStatusSpan.querySelector('strong');
+        
+      // Check if bpi-status span has a child <strong> element with the word "second deadline"
+      if (strongElement && strongElement.innerText.includes('deadline for a second chance before')) {
+        // Add the class "in_second_deadline" to the respective list-group-item element
+        listGroupItem.classList.add('in_second_deadline');
+      }
+    }
+  }
+});
