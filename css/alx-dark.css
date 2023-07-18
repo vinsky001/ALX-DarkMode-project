@@ -687,6 +687,7 @@ body.dark .tokenfield .token {
   border: 1px solid var(--col-bg-800) !important;
   color: var(--col-light-500) !important;
   opacity: .5;
+  color: red;
 }
 
 body.dark .tokenfield .token:hover {
