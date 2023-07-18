@@ -8,7 +8,10 @@
   --col-bg-800: #383a40;
 
   /* Bacground color for current date on the Events Calendar */
-  --col-current-date: #888672;
+  --col-current-date: #121212;
+
+  /* Border color for current date on the Events Calendar */
+  --col-current-date-border: #38b000;
 
   /* Bacground color for project in second deadline */
   --col-second-deadline: #ff00002b;
@@ -455,8 +458,12 @@ body.dark .dhx_cal_container {
   filter: drop-shadow(0 1px 2px var(--col-bg-400)) !important;
 }
 
+body.dark .dhx_now{
+	background-color: var(--col-bg-400) !important;
+	border: 1px solid var(--col-current-date-border) !important;
+}
 body.dark .dhx_now .dhx_month_body {
-  background-color: var(--col-current-date) !important;
+	/*background-color: var(--col-bg-400) !important;*/
 }
 
 body.dark .dhx_now .dhx_month_head {
