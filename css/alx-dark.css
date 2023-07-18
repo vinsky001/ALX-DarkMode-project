@@ -7,8 +7,7 @@
   --col-bg-700: #313338;
   --col-bg-800: #383a40;
 
-  /* Bacground color for current date on the Events Calendar */
-  --col-current-date: #121212;
+
 
   /* Border color for current date on the Events Calendar */
   --col-current-date-border: #38b000;
@@ -459,11 +458,10 @@ body.dark .dhx_cal_container {
 }
 
 body.dark .dhx_now{
-	background-color: var(--col-bg-400) !important;
 	border: 1px solid var(--col-current-date-border) !important;
 }
 body.dark .dhx_now .dhx_month_body {
-	/*background-color: var(--col-bg-400) !important;*/
+	background-color: var(--col-bg-400) !important;
 }
 
 body.dark .dhx_now .dhx_month_head {
